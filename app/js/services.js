@@ -8,23 +8,20 @@ var hackServices = angular.module('hackServices', []);
 hackServices.factory('LineChart',
     function () {
         var service = {};
-        service.line = function(data) {
+        service.line = function (data) {
             $('#container').highcharts({
                 chart: {
                     type: 'line'
                 },
                 title: {
-                    text: 'Monthly Average Temperature'
-                },
-                subtitle: {
-                    text: 'Source: WorldClimate.com'
+                    text: 'Listing Upgrades Changing History'
                 },
                 xAxis: {
-                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                    categories:data.Time
                 },
                 yAxis: {
                     title: {
-                        text: 'Temperature (°C)'
+                        text: 'Price$'
                     }
                 },
                 plotOptions: {
@@ -32,20 +29,26 @@ hackServices.factory('LineChart',
                         dataLabels: {
                             enabled: true
                         },
-                        enableMouseTracking: false
+                        enableMouseTracking: true
                     }
                 },
                 series: [
                     {
-                        name: 'Tokyo',
-                        data: data.Tokyo
+                        name: 'Feature',
+                        data: data.Feature
                     },
                     {
-                        name: 'London',
-                        data: data.London
+                        name: 'Highlight',
+                        data: data.Highlight
+                    },
+                    {
+                        name: 'Premiere',
+                        data: data.Premiere
                     }
                 ]
             });
         }
         return service;
-});
+    });
+
+

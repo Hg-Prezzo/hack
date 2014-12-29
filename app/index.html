@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
 
     <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -22,7 +23,30 @@
 <body>
 
 <div class="view-container">
-    <div ng-view class="view-frame"></div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="img/brand_mini.png">
+                </a>
+            </div>
+            <h2 class="navbar-text">Where Pricing Lives</h2>
+        </div>
+    </nav>
+
+    <div class='row-fluid'>
+        <div class="col-md-2 side-bar" id="leftCol">
+            <ul class="nav nav-pills nav-stacked" role="tablist">
+                <li><a class="btn-primary" href="">Jiaji & Xi</a></li>
+                <li><a class="btn-primary" href="">Section 2</a></li>
+                <li><a class="btn-primary" href="">Section 3</a></li>
+                <li><a class="btn-primary" href="">Section 4</a></li>
+            </ul>
+        </div>
+
+        <div ng-view class="view-frame"></div>
+
+    </div>
 </div>
 
 </body>

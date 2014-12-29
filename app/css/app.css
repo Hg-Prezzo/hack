@@ -1,1 +1,28 @@
 /* app css stylesheet */
+
+/* sidebar style*/
+
+#leftCol {
+    margin-top: 50px;
+    border: 1px dashed;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    border-color: deepskyblue;
+}
+
+#leftCol a {
+    margin-top: 5px;
+}
+
+/* main view container*/
+
+.view-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*nav bar*/
+nav h2 {
+    text-align: center;
+}
