@@ -37,14 +37,14 @@
     <div class='row-fluid'>
         <div class="col-md-2 side-bar" id="leftCol">
             <ul class="nav nav-pills nav-stacked" role="tablist">
-                <li><a class="btn-primary" href="">Jiaji & Xi</a></li>
-                <li><a class="btn-primary" href="">Section 2</a></li>
-                <li><a class="btn-primary" href="">Section 3</a></li>
-                <li><a class="btn-primary" href="">Section 4</a></li>
+                <li><a class="btn-primary" href="#view1">Jiaji & Xi</a></li>
+                <li><a class="btn-primary" href="#view2">Section 2</a></li>
+                <li><a class="btn-primary" href="#view3">Section 3</a></li>
+                <li><a class="btn-primary" href="#view4">Section 4</a></li>
             </ul>
         </div>
 
-        <div ng-view class="view-frame"></div>
+        <div class="col-md-10" ng-view class="view-frame" id="container"></div>
 
     </div>
 </div>
