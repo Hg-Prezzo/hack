@@ -4,6 +4,7 @@
 
 var hackApp = angular.module('hackApp', [
     'ngRoute',
+    'ui.bootstrap',
 
     'hackControllers',
     'hackServices'

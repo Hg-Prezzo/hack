@@ -29,9 +29,9 @@ nav h2 {
 
 
 /* container */
-#container {
+.view-frame {
     margin-left: 5px;
-    min-width: 310px; 
+    min-width: 310px;
     height: 400px;
     margin: auto
 }

@@ -1,2 +1,14 @@
+<div id="container" style="margin-bottom: 50px;"></div>
+
+<div class="col-lg-4 input-group" style="float: none; margin: 0 auto;">
+    <input type="text" class="form-control" ng-model="selectedState"
+           typeahead="state for state in states| filter:selectedState"
+           placeholder="Enter suburb">
+
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+    </span>
+</div>
+
 
 

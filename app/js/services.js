@@ -4,7 +4,6 @@
 
 var hackServices = angular.module('hackServices', []);
 
-
 hackServices.factory('LineChart',
     function () {
         var service = {};
