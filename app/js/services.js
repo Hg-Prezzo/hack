@@ -13,7 +13,7 @@ hackServices.factory('LineChart',
                     type: 'line'
                 },
                 title: {
-                    text: 'Listing Upgrades Changing History'
+                    text: data.suburb + ' Listing Upgrades Changing History'
                 },
                 xAxis: {
                     categories:data.Time

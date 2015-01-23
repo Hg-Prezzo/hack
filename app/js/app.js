@@ -13,7 +13,7 @@ var hackApp = angular.module('hackApp', [
 hackApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
-            when('/view1', {
+            when('/view1/:suburb', {
                 templateUrl: 'partials/view1.html',
                 controller: 'LineStaticCtrl'
             }).
@@ -27,6 +27,6 @@ hackApp.config(['$routeProvider',
                 templateUrl: 'partials/view4.html'
             }).
             otherwise({
-                redirectTo: '/view1'
+                redirectTo: '/view1/richmond-vic-3121'
             });
     }]);
